@@ -27,7 +27,7 @@ public class AtomicTest {
 
          AtomicDemo demo = new AtomicDemo();
         for (int i = 0; i <10 ; i++) {
-
+            // 多个线程操作同一资源
             new Thread(demo).start();
 
         }
@@ -37,7 +37,10 @@ public class AtomicTest {
 
 }
 
-
+/**
+ * AtomicInteger,AtomicInteger同属concurrent封装的包内容
+ * 保证内存的可见性和原子性
+ */
 class AtomicDemo implements Runnable{
 
     // 资源
