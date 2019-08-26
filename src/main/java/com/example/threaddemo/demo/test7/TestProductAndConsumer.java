@@ -2,6 +2,12 @@ package com.example.threaddemo.demo.test7;
 
 /**
  * 线程等待唤醒 - 生产消费案例
+ * 公共资源：货物
+ * 生产货物：类似普通多线程的环境下的set方法
+ * 消费货物：类似普通多线程的环境下的get方法
+ *
+ * 思考线程唤醒的操作-唤醒等待机制几个状态切换
+ *
  */
 public class TestProductAndConsumer {
 
