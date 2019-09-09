@@ -66,7 +66,7 @@ class MethodO{
         lock.lock();
         try {
 
-            // 判断当前线程是几号线程
+            // 判断当前线程是几号线程 - 只有是1号线程的时候 才允许执行
             if (num != 1){
                 condition1.await();
             }
